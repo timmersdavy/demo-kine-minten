@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinesitherapie Valérie Minten · Zonhoven</title>
+<meta name="description" content="Kinesitherapie in Zonhoven. Duidelijke antwoorden, praktische info en een afspraak in een paar klikken.">
+<meta name="theme-color" content="#5856d6">
+<meta property="og:title" content="Kinesitherapie Valérie Minten · Zonhoven">
+<meta property="og:description" content="Voorbeeldontwerp voor een kinesitherapiepraktijk in Zonhoven.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%B8%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#ffffff; --bg2:#f5f5f7; --text:#1d1d1f; --muted:#6e6e73;
+  --accent:#5856d6; --accent-h:#6866e0; --btn:#5856d6; --btn-h:#6866e0; --line:rgba(0,0,0,.09);
+  --shadow:0 8px 30px rgba(0,0,0,.10); --ease:cubic-bezier(.28,.11,.32,1);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#000; --bg2:#1d1d1f; --text:#f5f5f7; --muted:#a1a1a6; --accent:#8e8cff; --accent-h:#a3a1ff; --btn:#5856d6; --btn-h:#6866e0; --line:rgba(255,255,255,.13); --shadow:0 8px 30px rgba(0,0,0,.6)}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.47;font-size:18px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.demo{background:var(--text);color:var(--bg);font-size:14px;text-align:center;padding:9px 16px}
+.btn{display:inline-block;background:var(--btn);color:#fff;border:0;font:inherit;font-size:17px;padding:12px 24px;border-radius:980px;cursor:pointer;transition:background .3s var(--ease),transform .3s var(--ease)}
+.btn:hover{background:var(--btn-h);transform:scale(1.02)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+/* Opbouw: praktische info staat meteen naast de titel */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center;padding:96px 0 110px}
+.name{font-size:17px;color:var(--muted);margin-bottom:22px}
+h1{text-wrap:balance;font-size:clamp(42px,5.8vw,78px);font-weight:600;letter-spacing:-.03em;line-height:1.04}
+.lead{font-size:clamp(19px,2vw,23px);color:var(--muted);max-width:30ch;margin-top:26px;line-height:1.4}
+.hero .btn{margin-top:38px}
+
+.ticket{background:var(--bg2);border-radius:28px;padding:34px 34px 30px}
+.ticket h2{font-size:21px;font-weight:600;letter-spacing:-.01em}
+.ticket address{font-style:normal;color:var(--muted);margin-top:6px;font-size:16px}
+.hours{width:100%;border-collapse:collapse;margin-top:22px;font-variant-numeric:tabular-nums;font-size:16px}
+.hours td{padding:11px 0;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--text);font-weight:600}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+.open{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:15px;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:#a1a1a6}
+.dot.on{background:#30a46c}
+
+.topics{margin-top:48px;max-width:760px}
+.topics div{display:grid;grid-template-columns:minmax(150px,230px) 1fr;gap:6px 32px;padding:22px 0;border-top:1px solid var(--line)}
+.topics div:last-child{border-bottom:1px solid var(--line)}
+.topics dt{font-weight:600;font-size:19px}
+.topics dd{color:var(--muted)}
+.sticky{display:none}
+section{padding:110px 0;border-top:1px solid var(--line)}
+h2.big{text-wrap:balance;font-size:clamp(30px,4vw,46px);font-weight:600;letter-spacing:-.02em;line-height:1.1;max-width:16ch}
+.faq{margin-top:48px;max-width:760px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:24px 40px 24px 0;font-size:21px;font-weight:600;letter-spacing:-.01em;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:19px;font-size:30px;font-weight:300;color:var(--accent);transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);padding:0 40px 26px 0;max-width:56ch}
+
+.contact{background:var(--bg2)}
+.cwrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+form{display:grid;gap:16px;margin-top:36px}
+label{display:grid;gap:6px;font-size:15px;color:var(--muted)}
+input,textarea{font:inherit;font-size:17px;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 14px;width:100%}
+textarea{min-height:100px;resize:vertical}
+.ok{display:none;margin-top:36px;padding:26px;border-radius:18px;background:var(--bg);box-shadow:var(--shadow)}
+.ok h3{font-size:22px;font-weight:600}
+.ok p{color:var(--muted);margin-top:6px}
+.side p{color:var(--muted);margin-top:14px;max-width:34ch}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px}
+
+@media (max-width:860px){
+  .topics div{grid-template-columns:1fr}
+  .sticky{display:block;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:5;text-align:center;box-shadow:var(--shadow);transition:opacity .3s var(--ease),transform .3s var(--ease)}
+  .sticky.hide{opacity:0;transform:translateY(20px);pointer-events:none}
+  footer{padding-bottom:96px}
+  .hero{grid-template-columns:1fr;gap:44px;padding:56px 0 64px}
+  .cwrap{grid-template-columns:1fr;gap:36px}
+  section{padding:72px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="demo">Voorbeeldontwerp van TimmersDesign. Teksten en openingsuren zijn voorbeelden en worden samen met u ingevuld.</div>
+
+<a class="btn sticky hide" id="sticky" href="#afspraak">Afspraak maken</a>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <p class="name">Kinesitherapie Valérie Minten</p>
+        <h1>Kinesitherapie in Zonhoven.</h1>
+        <p class="lead">Duidelijke uitleg, oefeningen die u kunt volhouden en een afspraak die u snel hebt.</p>
+        <a class="btn" href="#afspraak">Afspraak maken</a>
+      </div>
+      <aside class="ticket" aria-label="Praktische info">
+        <h2>Praktijk</h2>
+        <address>Beskensstraat 60<br>3520 Zonhoven</address>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Maandag</td><td>09.00 tot 18.00</td></tr>
+          <tr data-d="2"><td>Dinsdag</td><td>09.00 tot 18.00</td></tr>
+          <tr data-d="3"><td>Woensdag</td><td>09.00 tot 13.00</td></tr>
+          <tr data-d="4"><td>Donderdag</td><td>09.00 tot 18.00</td></tr>
+          <tr data-d="5"><td>Vrijdag</td><td>09.00 tot 16.00</td></tr>
+          <tr data-d="6"><td>Zaterdag</td><td>Gesloten</td></tr>
+          <tr data-d="0"><td>Zondag</td><td>Gesloten</td></tr>
+        </table>
+        <p class="open"><span class="dot" id="dot"></span><span id="state"></span></p>
+        <p class="note">Voorbeelduren. De echte uren vult de praktijk zelf aan.</p>
+      </aside>
+    </div>
+  </div>
+
+  <section id="waarvoor">
+    <div class="wrap">
+      <h2 class="big">Waarvoor u terecht kunt.</h2>
+      <dl class="topics">
+        <div><dt>Rug en nek</dt><dd>Stijfheid of pijn, bijvoorbeeld door werk of een verkeerde houding.</dd></div>
+        <div><dt>Schouder en arm</dt><dd>Pijn of beperking bij alledaagse bewegingen.</dd></div>
+        <div><dt>Knie en heup</dt><dd>Klachten bij stappen, trappen of opstaan.</dd></div>
+        <div><dt>Na een operatie</dt><dd>Stap voor stap herstellen, in overleg met uw arts.</dd></div>
+        <div><dt>Sport</dt><dd>Herstel na een blessure en weer veilig kunnen sporten.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="vragen">
+    <div class="wrap">
+      <h2 class="big">Wat u zich vooraf afvraagt.</h2>
+      <div class="faq">
+        <details>
+          <summary>Heb ik een voorschrift nodig?</summary>
+          <p>Voor terugbetaling door de mutualiteit is meestal een voorschrift van uw arts nodig. Twijfelt u of hebt u er geen? Vraag het gerust vooraf, dan zoeken we samen uit wat voor u kan.</p>
+        </details>
+        <details>
+          <summary>Wat neem ik mee naar de eerste afspraak?</summary>
+          <p>Uw identiteitskaart, uw voorschrift als u er een hebt en kledij waarin u makkelijk beweegt. Hebt u scans of verslagen van een arts? Neem die ook mee.</p>
+        </details>
+        <details>
+          <summary>Wat gebeurt er tijdens de eerste afspraak?</summary>
+          <p>We praten over uw klacht, kijken hoe u beweegt en bespreken wat we samen willen bereiken. U weet na afloop wat er aan de hand is en wat de volgende stap is.</p>
+        </details>
+        <details>
+          <summary>Moet ik thuis oefenen?</summary>
+          <p>Meestal wel, maar niet veel. We kiezen een paar eenvoudige oefeningen die u in uw dag kunt inpassen.</p>
+        </details>
+        <details>
+          <summary>Hoe vraag ik een afspraak aan?</summary>
+          <p>Vul hieronder het formulier in. De praktijk neemt contact met u op om een moment af te spreken.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="afspraak">
+    <div class="wrap cwrap">
+      <div>
+        <h2 class="big">Een afspraak aanvragen.</h2>
+        <form id="form">
+          <label>Naam<input name="naam" required autocomplete="name"></label>
+          <label>Telefoon of e-mail<input name="contact" required autocomplete="email"></label>
+          <label>Waar hebt u last van?<textarea name="msg"></textarea></label>
+          <div><button class="btn" type="submit">Afspraak aanvragen</button></div>
+        </form>
+        <div class="ok" id="ok" role="status">
+          <h3>Aanvraag verzonden.</h3>
+          <p>In de echte website komt deze melding na het versturen, en ontvangt de praktijk uw bericht per mail.</p>
+        </div>
+      </div>
+      <div class="side">
+        <p>Beskensstraat 60, 3520 Zonhoven</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Beskensstraat+60+3520+Zonhoven" target="_blank" rel="noopener">Route openen in Google Maps</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><footer>© 2026 Kinesitherapie Valérie Minten · Beskensstraat 60, 3520 Zonhoven · Voorbeeldontwerp door TimmersDesign</footer></div>
+</main>
+
+<script>
+// huidige dag markeren en tonen of de praktijk (volgens de voorbeelduren) nu open is
+var now=new Date(),d=now.getDay();
+var row=document.querySelector('#hours tr[data-d="'+d+'"]');
+if(row){row.classList.add('today');
+  var m=row.cells[1].textContent.match(/(\d+)\.(\d+) tot (\d+)\.(\d+)/);
+  var open=false;
+  if(m){var mins=now.getHours()*60+now.getMinutes();open=mins>=(+m[1]*60+ +m[2])&&mins<(+m[3]*60+ +m[4])}
+  document.getElementById('dot').classList.toggle('on',open);
+  document.getElementById('state').textContent=open?'Nu open (volgens de voorbeelduren)':'Nu gesloten (volgens de voorbeelduren)';
+}
+var st=document.getElementById('sticky'),aps=document.getElementById('afspraak'),heroBtn=document.querySelector('.hero .btn');
+var inHero=true,inForm=false;
+function upd(){st.classList.toggle('hide',inHero||inForm)}
+if('IntersectionObserver' in window){
+  new IntersectionObserver(function(e){inHero=e[0].isIntersecting;upd()}).observe(heroBtn);
+  new IntersectionObserver(function(e){inForm=e[0].isIntersecting;upd()},{threshold:.15}).observe(aps);
+}
+upd();
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'});
+</script>
+</body>
+</html>
